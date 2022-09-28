@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="mainContainer">
+        <div id="container">
+            <!-- Form Steps / Progress Bar -->
+            <ul class="stepper text-center">
+                <!-- Step 1 -->
+                <li class="completed text-center">
+                    <a>
+                        <span class="circle">
+                            <span>1</span>
+                        </span>
+                        <div class="label">Cabin</div>
+                    </a>
+                </li>
+                <!-- Step 2 -->
+                <li class="active text-center">
+                    <a >
+                        <span class="circle text-muted">
+                            <span>2</span>
+                        </span>
+                        <div class="label text-muted">Meals</div>
+                    </a>
+                </li>
+                <!-- Step 3 -->
+                <li class="unfinished text-center">
+                    <a >
+                        <span class="circle text-muted">
+                            <span>3</span>
+                        </span>
+                        <div class="label text-muted">Upgrades</div>
+                    </a>
+                </li>
+                <!-- Step 3 -->
+                <li class="unfinished text-center">
+                    <a >
+                        <span class="circle text-muted">
+                            <span>4</span>
+                        </span>
+                        <div class="label text-muted">Payment</div>
+                    </a>
+                </li>
+            </ul>
+            <!-- Step Wise Form Content -->
+            <form name="flightForm" enctype="multipart/form-data">
+                <!-- Step 1 Content -->
+                <section id="step-1" class="form-step">
+                    <h2 class="font-normal">Meal Preferences</h2>
+                    <!-- Step 1 input fields -->
+                    <div class="formContainer">
+                        Your flight comes with breakfast, lunch, and dinner. Please make your selections below.
+                        <br>Changes to your order can be made up to 48 hours before your flight.
+                        <div class="foodSection">
+                            <div class="foodColumn">
+                                <label for="breakfast">Breakfast:</label>
+                                <select id="breakfast">
+                                    <option value="Sausage Egg Scramble Bowl">Sausage Egg Scramble Bowl</option>
+                                    <option value="lorem ipsum">lorem ipsum</option>
+                                    <option value="lorem ipsum">lorem ipsum</option>
+                                    <option value="lorem ipsum">lorem ipsum</option>
+                                </select>
+                                <label for="lunch">Lunch:</label>
+                                <select id="lunch">
+                                    <option value="Club Sandwich Meal">Club Sandwich Meal</option>
+                                    <option value="lorem ipsum">lorem ipsum</option>
+                                    <option value="lorem ipsum">lorem ipsum</option>
+                                    <option value="lorem ipsum">lorem ipsum</option>
+                                </select>
+                                <label for="dinner">Dinner:</label>
+                                <select id="dinner">
+                                    <option value="Wagyu Beef Sliders Meal">Wagyu Beef Sliders Meal</option>
+                                    <option value="lorem ipsum">lorem ipsum</option>
+                                    <option value="lorem ipsum">lorem ipsum</option>
+                                    <option value="lorem ipsum">lorem ipsum</option>
+                                </select>
+                                <div class="dessert">
+                                    <label for="checkbox"> I'd like dessert, too!</label>
+                                    <input type="checkbox" name="checkbox" value="checkbox" id="checkbox">
+                                </div>
+                            </div>
+                            <div class="drinkColumn">
+                                <label for="drink">Drink:</label>
+                                <select id="breakfastdrink">
+                                    <option value="Coffee">Coffee</option>
+                                    <option value="lorem ipsum">lorem ipsum</option>
+                                    <option value="lorem ipsum">lorem ipsum</option>
+                                    <option value="lorem ipsum">lorem ipsum</option>
+                                </select>
+                                <label for="lunch">Drink:</label>
+                                <select id="lunchdrink">
+                                    <option value="Cranberry Juice">Cranberry Juice</option>
+                                    <option value="lorem ipsum">lorem ipsum</option>
+                                    <option value="lorem ipsum">lorem ipsum</option>
+                                    <option value="lorem ipsum">lorem ipsum</option>
+                                </select>
+                                <label for="dinner">Drink:</label>
+                                <select id="dinnerdrink">
+                                    <option value="Red Wine">Red Wine</option>
+                                    <option value="lorem ipsum">lorem ipsum</option>
+                                    <option value="lorem ipsum">lorem ipsum</option>
+                                    <option value="lorem ipsum">lorem ipsum</option>
+                                </select>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="buttonContainer">
+                        <button class="button back" type="button">Back</button>
+                        <button class="button next" type="button">Continue</button>
+                    </div>
+               
+            </form>
+        </div>
+    </div>
+</body>
+</html>
